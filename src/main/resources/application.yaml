@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: springkotlincontainer
+
+  datasource:
+    url:  jdbc:postgresql://localhost:5432/kotlinstarter
+    username: test
+    password: test@test
+    driver-class-name: org.postresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format-sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
